@@ -1,5 +1,5 @@
-#VPrnt
+# VPrint
 
-![Tests](https://github.com/ZachElkins/verbose_print/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/ZachElkins/VPrint/actions/workflows/tests.yml/badge.svg)
 
 Verbose printing utility for python.
