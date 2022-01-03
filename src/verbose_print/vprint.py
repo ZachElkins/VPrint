@@ -1,7 +1,7 @@
 
 def vprint(*args, verbose: bool = False, end: str = "\n"):
     out: str = ""
-    l: str = len(args)
+    l: int = len(args)
     for i in range(l):
         out = out + args[i]
         if i < l-1:
