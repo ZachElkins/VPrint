@@ -1,5 +1,6 @@
 from verbose_print.styles import Styles
 from verbose_print.style_decorators import PrintStyle
+from typing import Optional
 
 
 def vprint(
@@ -8,7 +9,7 @@ def vprint(
         end: str = "\n",
         underline: bool = False,
         bold: bool = False,
-        color: Styles = None
+        color: Optional[Styles] = None
 ):
     """
     Basic verbose printing function.
@@ -29,7 +30,7 @@ def vprint(
     if underline:
         out = out + Styles.UNDERLINE
     if color is not None:
-        out = out + color
+        out = out + str(color)
     l: int = len(args)
     for i in range(l):
         out = out + args[i]
@@ -147,7 +148,7 @@ def vbold(
         *args,
         verbose: bool = False,
         end: str = "\n",
-        color: Styles = None
+        color: Optional[Styles] = None
 ):
     """
     Basic verbose printing function, prints bolded.
@@ -165,7 +166,7 @@ def vunderline(
         *args,
         verbose: bool = False,
         end: str = "\n",
-        color: Styles = None
+        color: Optional[Styles] = None
 ):
     """
     Basic verbose printing function, prints underlined.
